@@ -1,1 +1,31 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --card-main-weight: 400;
+    --card-title-weight: 700;
+    --bg-color: #FFFFFF;
+    --main-color: #000000;
+    --disabled-color: #00000060;
+    --stroke-color: var(--bg-color);
+    --button-color: var(--bg-color);
+    --heart-contour-color: var(--main-color);
+    --heart-fill-color: #FF0000;
+    --heart-sparks-color: var(--heart-fill-color);
+    --bg-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --inter-font: 'Inter-Variable', 'Arial', sans-serif;
+    --press-font: 'PressStart2P', 'Arial', sans-serif;
+    --logo-font-size: clamp(3rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --header-block-start: clamp(98px, calc(98px + 100% * (100 - 98) / (1440 - 375)), 100px);
+    --header-title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+    --veil: #00000075;
+    --card-width: clamp(374px, 100%, 700px);
+    --header-top-padding: clamp(115px, calc(115px + 100vw * (138 - 122) / (1440 - 375)), 138px);
+    --menu__item-margin: clamp(4px, calc(18px + 100vw * (4 - 18) / (1440 - 375)), 18px);
+    --header_title-margin: clamp(16px, calc(24px + 100vw * (16 - 24) / (1440 - 375)), 24px);
+    --menu-inline-start: clamp(22px, calc(22px + 100vw * (60 - 22) / (1440 - 375)), 31px);
+    --main-gap: 50px;
+    /* --main-gap: clamp(52px, calc(52px + 100% * (54 - 52) / (1440 - 375)), 54px); */
+    --dialog-width: clamp(341px, calc(353px + 100% * (341 - 353) / (1440 - 375)), 353px);
+    --dialog-inline-padding: clamp(30px, calc(42px + 100% * (30 - 42) / (1440 - 375)), 42px);
+}
