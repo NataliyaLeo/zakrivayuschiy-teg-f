@@ -20,12 +20,14 @@
     --header-title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
     --veil: #00000075;
     --card-width: clamp(374px, 100%, 700px);
-    --header-top-padding: clamp(115px, calc(115px + 100vw * (138 - 122) / (1440 - 375)), 138px);
-    --menu__item-margin: clamp(4px, calc(18px + 100vw * (4 - 18) / (1440 - 375)), 18px);
-    --header_title-margin: clamp(16px, calc(24px + 100vw * (16 - 24) / (1440 - 375)), 24px);
-    --menu-inline-start: clamp(22px, calc(22px + 100vw * (60 - 22) / (1440 - 375)), 31px);
+    --header-top-padding: clamp(120px, calc(120px + (100vw - 375px) * (136 - 120) / (1440 - 375)), 136px);
+    --header_title-margin-block-end: clamp(16px, calc(24px + (100vw - 375px) * (16 - 24) / (1440 - 375)), 24px);
+    --header_title-margin-inline-start: clamp(0px, calc(16px + (100vw - 375px) * (0 - 16) / (1440 - 375)), 16px);
+    --menu__item-margin: clamp(2px, calc(7px + (100vw - 375px) * (2 - 7) / (1440 - 375)), 7px);
+    --menu-inline-start: clamp(20px, calc(38px + (100vw - 375px) * (20 - 38) / (1440 - 375)), 38px);
     --main-gap: 50px;
     /* --main-gap: clamp(52px, calc(52px + 100% * (54 - 52) / (1440 - 375)), 54px); */
-    --dialog-width: clamp(341px, calc(353px + 100% * (341 - 353) / (1440 - 375)), 353px);
-    --dialog-inline-padding: clamp(30px, calc(42px + 100% * (30 - 42) / (1440 - 375)), 42px);
+    --dialog-width: clamp(341px, calc(353px + (100vw - 375px) * (341 - 353) / (1440 - 375)), 353px);
+    --dialog-inline-padding: clamp(30px, calc(42px + (100vw - 375px) * (30 - 42) / (1440 - 375)), 42px);
+    --like-button-margin: clamp(10px, calc(10px + (100vw - 375px) * (25 - 10) / (1440 - 375)), 25px);;
 }
