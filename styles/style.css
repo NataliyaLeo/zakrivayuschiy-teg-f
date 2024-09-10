@@ -61,7 +61,7 @@
   margin-block-end: var(--header_title-margin-block-end);
   /* margin-inline-start: 16px; */
   text-transform: uppercase;
-  font-size: 23px;
+  font-size: var(--header-title-size);
 }
 
 .theme-menu__item + .theme-menu__item {
@@ -198,7 +198,7 @@
 .image-label {
   position: absolute;
   inset-block-start: 25px;
-  inset-inline-end: 25px;
+  inset-inline-end: var(--label-inline-end);
   font-family: var(--press-font);
   mix-blend-mode: hard-light;
   opacity: 50%;
@@ -231,7 +231,7 @@
   justify-content: end;
   align-items: center;
   gap: 9px;
-  margin: 25px var(--like-button-margin) 25px auto;
+  margin: 25px 25px 25px auto;
   position: relative;
 }
 
@@ -333,7 +333,7 @@
   align-items: center;
 }
 
-dialog::backdrop {
+.dialog::backdrop {
   background-color: var(--veil);
 } 
 

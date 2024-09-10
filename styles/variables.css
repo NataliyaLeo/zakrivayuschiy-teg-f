@@ -29,6 +29,7 @@
     /* --main-gap: clamp(52px, calc(52px + 100% * (54 - 52) / (1440 - 375)), 54px); */
     --dialog-width: clamp(341px, calc(341px + (100vw - 375px) * (353 - 341) / (1440 - 375)), 353px);
     --dialog-inline-padding: clamp(30px, calc(38px + (100vw - 375px) * (30 - 38) / (1440 - 375)), 38px);
-    --like-button-margin: clamp(10px, calc(10px + (100vw - 375px) * (25 - 10) / (1440 - 375)), 25px);
+    /* --like-button-margin: clamp(10px, calc(10px + (100vw - 375px) * (25 - 10) / (1440 - 375)), 25px); */
     --floppy-button-width: clamp(306px, calc(306px + (100vw - 375px) * (335 - 306) / (1440 - 375)), 335px);
+    --label-inline-end: clamp(13px, calc(13px + (100vw - 375px) * (25 - 13) / (1440 - 375)), 25px);
 }
