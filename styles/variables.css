@@ -19,7 +19,7 @@
     --header-block-start: clamp(98px, calc(98px + 100% * (100 - 98) / (1440 - 375)), 100px);
     --header-title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
     --veil: #00000075;
-    --card-width: clamp(374px, 100%, 700px);
+    --card-width: clamp(374px, calc(374px + (100vw - 375px) * (700 - 374) / (1440 - 375)), 700px);
     --header-top-padding: clamp(120px, calc(120px + (100vw - 375px) * (136 - 120) / (1440 - 375)), 136px);
     --header_title-margin-block-end: clamp(16px, calc(24px + (100vw - 375px) * (16 - 24) / (1440 - 375)), 24px);
     --header_title-margin-inline-start: clamp(0px, calc(16px + (100vw - 375px) * (0 - 16) / (1440 - 375)), 16px);
@@ -29,5 +29,6 @@
     /* --main-gap: clamp(52px, calc(52px + 100% * (54 - 52) / (1440 - 375)), 54px); */
     --dialog-width: clamp(341px, calc(341px + (100vw - 375px) * (353 - 341) / (1440 - 375)), 353px);
     --dialog-inline-padding: clamp(30px, calc(38px + (100vw - 375px) * (30 - 38) / (1440 - 375)), 38px);
-    --like-button-margin: clamp(10px, calc(10px + (100vw - 375px) * (25 - 10) / (1440 - 375)), 25px);;
+    --like-button-margin: clamp(10px, calc(10px + (100vw - 375px) * (25 - 10) / (1440 - 375)), 25px);
+    --floppy-button-width: clamp(306px, calc(306px + (100vw - 375px) * (335 - 306) / (1440 - 375)), 335px);
 }

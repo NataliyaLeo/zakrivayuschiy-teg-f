@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* align-content: center; */
 }
 
 .header {
@@ -52,6 +53,7 @@
 .logo {
   font-size: var(--logo-font-size);
   margin: 0 0 20px;
+  text-decoration: none;
 }
 
 .header_title {
@@ -59,6 +61,7 @@
   margin-block-end: var(--header_title-margin-block-end);
   /* margin-inline-start: 16px; */
   text-transform: uppercase;
+  font-size: 23px;
 }
 
 .theme-menu__item + .theme-menu__item {
@@ -77,6 +80,8 @@
   font-size: 14px;
   line-height: 14px;
   cursor: pointer;
+  transition: color 0.3s;
+  transition-timing-function: ease;
 }
 
 /* .theme-menu__button:enabled {
@@ -87,8 +92,6 @@
 
 .theme-menu__button:disabled {
   color: var(--disabled-color);
-  transition: color 0.3s;
-  transition-timing-function: ease;
   pointer-events: none;
 }
 
@@ -101,14 +104,10 @@
 
 .theme-menu__button:hover {
   color: var(--disabled-color);
-  transition: color 0.3s;
-  transition-timing-function: ease;
 }
 
 .theme-menu__button:focus {
   color: var(--disabled-color);
-  transition: color 0.3s;
-  transition-timing-function: ease;
 }
 
 .theme-menu__button::after {
@@ -134,39 +133,6 @@
   flex-direction: column;
 }
 
-.dialog {
-  width: var(--dialog-width);
-  height: 191px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: currentColor;
-  padding: 28px var(--dialog-inline-padding);
-}
-
-.dialog[open] {
-  display: grid;
-  grid-template-columns: 39px auto;
-  grid-template-rows: auto auto;
-  column-gap: 20px;
-  row-gap: 30px;
-  grid-template-areas: "dialog_floppy dialog_text"
-  "dialog_button dialog_button";
-  align-items: center;
-}
-
-dialog::backdrop {
-  background-color: var(--veil);
-} 
-
-.dialog_floppy {
-  grid-area: dialog_floppy;
-}
-
-.dialog_text {
-  font-family: var(--press-font);
-  grid-area: dialog_text;
-}
-
 .bordered-button {
   border: solid 2px currentColor;
   background-color: var(--bg-color);
@@ -187,10 +153,14 @@ dialog::backdrop {
 
 .wrapper {
   position: relative; 
+  width: 100%;
+  height: var(--card-width);
 }
 
 .card_image {
+  object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 .card_1 {
@@ -270,13 +240,13 @@ dialog::backdrop {
   border: solid 2px currentColor;
   background-color: var(--bg-color);
   color: currentColor;
+  transition: box-shadow 0.3s;
+  transition-timing-function: ease;
 }
 
 .hoverable-button:focus,
 .hoverable-button:focus-visible {
   box-shadow: 2px 2px 0 currentColor;
-  transition: box-shadow 0.3s;
-  transition-timing-function: ease;
 }
 
 .hoverable-button::before {
@@ -311,12 +281,12 @@ dialog::backdrop {
   align-items: center;
   cursor: pointer;
   padding: 0;
+  transition: color 0.3s;
+  transition-timing-function: ease;
 }
 
 .card__icon-button:focus-visible {
   border-color: var(--main-color);
-  transition: color 0.3s;
-  transition-timing-function: ease;
 }
 
 .card__like-button {
@@ -327,23 +297,56 @@ dialog::backdrop {
   justify-content: center;
 }
 
-.footer {
-  margin-block-start: 50px;
-}
-
-.footer_button {
+.floppy_button {
   display: flex;
+  align-self: center;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
-  padding: 15px 19px;
+  padding: 15px 18px;
   font-family: var(--press-font);
+  width: var(--floppy-button-width);
 }
 
-.footer_floppy {
+.main_floppy {
   width: 21px;
   height: 21px;
+}
+
+.dialog {
+  width: var(--dialog-width);
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--main-color);
+  padding: 28px var(--dialog-inline-padding);
+}
+
+.dialog[open] {
+  display: grid;
+  grid-template-columns: 39px auto;
+  grid-template-rows: auto auto;
+  column-gap: 20px;
+  row-gap: 30px;
+  grid-template-areas: "dialog_floppy dialog_text"
+  "dialog_button dialog_button";
+  align-items: center;
+}
+
+dialog::backdrop {
+  background-color: var(--veil);
+} 
+
+.dialog_floppy {
+  grid-area: dialog_floppy;
+}
+
+.dialog_text {
+  grid-area: dialog_text;
+}
+
+.dialog_button {
+  grid-area: dialog_button;
 }
 
 @media (width <= 375px) {
