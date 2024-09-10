@@ -137,7 +137,6 @@
 .dialog {
   width: var(--dialog-width);
   height: 191px;
-  opacity: 50%;
   line-height: 21px;
   text-transform: uppercase;
   color: currentColor;
