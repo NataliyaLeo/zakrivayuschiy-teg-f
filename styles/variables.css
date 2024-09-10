@@ -28,6 +28,6 @@
     --main-gap: 50px;
     /* --main-gap: clamp(52px, calc(52px + 100% * (54 - 52) / (1440 - 375)), 54px); */
     --dialog-width: clamp(341px, calc(341px + (100vw - 375px) * (353 - 341) / (1440 - 375)), 353px);
-    --dialog-inline-padding: clamp(30px, calc(42px + (100vw - 375px) * (30 - 42) / (1440 - 375)), 42px);
+    --dialog-inline-padding: clamp(30px, calc(38px + (100vw - 375px) * (30 - 38) / (1440 - 375)), 38px);
     --like-button-margin: clamp(10px, calc(10px + (100vw - 375px) * (25 - 10) / (1440 - 375)), 25px);;
 }

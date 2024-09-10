@@ -136,11 +136,12 @@
 
 .dialog {
   width: var(--dialog-width);
-  height: max-content;
+  height: 191px;
+  opacity: 50%;
   line-height: 21px;
   text-transform: uppercase;
   color: currentColor;
-  padding: 30px var(--dialog-inline-padding);
+  padding: 28px var(--dialog-inline-padding);
 }
 
 .dialog[open] {
